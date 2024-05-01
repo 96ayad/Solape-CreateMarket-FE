@@ -68,8 +68,17 @@ export const useConnection = create<ConnectionStore>((set, get) => ({
 
   // currentEndPoint: undefined,
   // autoChoosedEndPoint: undefined,
-  currentEndPoint: "https://api.devnet.solana.com/",
-  autoChoosedEndPoint: undefined,
+  currentEndPoint: {
+    url: "https://api.devnet.solana.com/",
+    name: "api.devnet.solana.com",
+    isUserCustomized: true
+},
+
+  autoChoosedEndPoint: {
+    url: "https://api.devnet.solana.com/",
+    name: "api.devnet.solana.com",
+    isUserCustomized: true
+},
 
   isLoading: false,
   switchConnectionFailed: false,
