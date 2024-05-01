@@ -62,15 +62,13 @@ export const SESSION_STORAGE_USER_SELECTED_RPC = 'user-selected-rpc'
 export const useConnection = create<ConnectionStore>((set, get) => ({
   connection: undefined,
 
-
-  
   /////////////////////////ayad//////////////////
   //availableEndPoints: ["https://api.devnet.solana.com/"],
-  availableEndPoints: ["https://api.devnet.solana.com/"],
+  availableEndPoints: [],
 
-
-
-  currentEndPoint: undefined,
+  // currentEndPoint: undefined,
+  // autoChoosedEndPoint: undefined,
+  currentEndPoint: "https://api.devnet.solana.com/",
   autoChoosedEndPoint: undefined,
 
   isLoading: false,
